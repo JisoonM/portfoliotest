@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mark Jason B. Ramos | IT Specialist &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of Mark Jason B. Ramos: IT Specialist and Web Developer, Magna Cum Laude BSIT graduate. Full-stack websites, IT infrastructure, and AI-assisted development." />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="author" content="Mark Jason B. Ramos" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mark Jason B. Ramos | IT Specialist &amp; Web Developer" />
+  <meta property="og:description" content="Full-stack web development, IT infrastructure and AI-assisted engineering. Magna Cum Laude, BSIT." />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Apply saved/system theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mark Jason B. Ramos",
+    "jobTitle": "IT Specialist & Web Developer",
+    "email": "mailto:mrk.ramos118@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "San Pedro", "addressRegion": "Laguna", "addressCountry": "PH" },
+    "alumniOf": "Philippine Christian University",
+    "worksFor": [
+      { "@type": "Organization", "name": "Mama Lou's Group Holdings Inc." },
+      { "@type": "Organization", "name": "Legson Media", "url": "https://www.legsonmedia.com/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Mark Jason B. Ramos, home">
+        <span class="brand-mark">MR</span>
+        <span class="brand-name">Mark Jason Ramos</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai">AI Workflow</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Open to opportunities</p>
+          <h1>Hi, I'm <span class="grad">Mark Jason Ramos</span>.<br />I build and keep technology running.</h1>
+          <p class="lead">
+            IT Specialist and Web Developer who ships full-stack websites and keeps infrastructure healthy,
+            using AI as a core part of how I debug, design and deliver. Magna Cum Laude BSIT graduate.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" download>Download resume</a>
+            <a class="btn btn-link" href="#contact">Get in touch &rarr;</a>
+          </div>
+          <ul class="hero-meta">
+            <li>San Pedro, Laguna, PH</li>
+            <li>IT Specialist, MLG Hospitality</li>
+            <li>Web Dev &amp; SEO, Legson Media</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Highlights">
+          <div class="stat">
+            <span class="stat-num">Magna<br />Cum Laude</span>
+            <span class="stat-label">BSIT, Philippine Christian University</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1.46</span>
+            <span class="stat-label">GWA &middot; Consistent Dean's Lister<br /><small>(Philippine scale, 1.00 is highest)</small></span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">600 hrs</span>
+            <span class="stat-label">IT internship at PSBank</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2 roles</span>
+            <span class="stat-label">Currently working, full-time and part-time</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">About</p>
+          <h2>Hands-on IT, modern web, AI-powered workflow</h2>
+        </header>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>
+              I'm a fresh Information Technology graduate who already works across two worlds: keeping
+              on-site IT infrastructure running for a hospitality group, and building websites and
+              search visibility for clients with a US-based creative studio.
+            </p>
+            <p>
+              I enjoy the full path from a blank page to a live product: planning the structure, building
+              it, making it fast and discoverable, and supporting the people who use it. I troubleshoot
+              hardware, software and networks, and I use AI tools daily to move faster without cutting
+              corners.
+            </p>
+          </div>
+          <ul class="checklist reveal">
+            <li>Full-stack website and blog system development</li>
+            <li>SEO for local and service businesses</li>
+            <li>Hardware, software and network troubleshooting</li>
+            <li>AI-assisted debugging, testing and documentation</li>
+            <li>Quick learner who adapts to new tools and stacks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Experience</p>
+          <h2>Where I've been working</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="card">
+              <div class="card-top">
+                <div>
+                  <h3>Information Technology Specialist</h3>
+                  <p class="org">Mama Lou's Group Holdings Inc. (MLG Hospitality) &middot; Full-time</p>
+                </div>
+                <p class="when">Jun 2026 &ndash; Present</p>
+              </div>
+              <p class="where">Muntinlupa City, Metro Manila &middot; On-site</p>
+              <p>Responsible for IT infrastructure and technical support across the group's operations.</p>
+              <ul class="tags"><li>IT Infrastructure</li><li>Technical Support</li><li>Hardware &amp; Software</li><li>Networking</li></ul>
+            </article>
+          </li>
+
+          <li class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="card">
+              <div class="card-top">
+                <div>
+                  <h3>SEO Specialist &amp; Web Developer</h3>
+                  <p class="org"><a href="https://www.legsonmedia.com/" target="_blank" rel="noopener noreferrer">Legson Media</a> &middot; Part-time</p>
+                </div>
+                <p class="when">May 2026 &ndash; Present</p>
+              </div>
+              <p class="where">California, USA &middot; Remote</p>
+              <p>
+                Part of the team at Legson Media, a creative studio covering marketing, websites, custom
+                software and photo/video. I build client websites and handle search engine optimization,
+                including the Elite Builders IX website and blog platform.
+              </p>
+              <ul class="tags"><li>Web Development</li><li>SEO</li><li>Full-stack</li><li>Remote Team</li></ul>
+            </article>
+          </li>
+
+          <li class="t-item reveal">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="card">
+              <div class="card-top">
+                <div>
+                  <h3>IT Technical Support Intern</h3>
+                  <p class="org">Philippine Savings Bank (PSBank) &middot; 600 hours</p>
+                </div>
+                <p class="when">Sep 2025 &ndash; Feb 2026</p>
+              </div>
+              <ul class="bullets">
+                <li>Set up, configured and troubleshot user computers to keep systems running properly.</li>
+                <li>Performed secure data wiping and system reformatting when required.</li>
+                <li>Assisted with basic network setup and troubleshooting: connectivity, configuration and related issues.</li>
+                <li>Gave remote desktop support to resolve user concerns on computer systems and network configurations.</li>
+                <li>Helped set up and organize server racks and network racks, including cable management and equipment installation.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Projects</p>
+          <h2>Selected work</h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="project featured reveal">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mock">
+                <div class="mock-bar"><i></i><i></i><i></i><span>elitebuildersco.com</span></div>
+                <div class="mock-body">
+                  <div class="mock-hero"></div>
+                  <div class="mock-row"><div></div><div></div><div></div></div>
+                  <div class="mock-lines"><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="badge">In progress &middot; May 2026 &ndash; Present</p>
+              <h3>Elite Builders IX: Website &amp; Blog Platform</h3>
+              <p class="muted-line">Built with the Legson Media team &middot; Modesto, California</p>
+              <p>
+                A full-stack website and blog posting system for Elite Builders IX, a family-owned,
+                California-licensed framing contractor serving the Bay Area, Central Valley and
+                Southern California. The site is built to turn local searches into estimate requests.
+              </p>
+              <ul class="bullets compact">
+                <li>Service and service-area pages structured for local SEO</li>
+                <li>Blog publishing system for ongoing content</li>
+                <li>Free estimate request flow, project gallery, reviews and FAQ</li>
+                <li>Responsive, mobile-first layout with click-to-call contact</li>
+              </ul>
+              <ul class="tags"><li>Full-stack</li><li>Blog System</li><li>Local SEO</li><li>Responsive</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://www.elitebuildersco.com/" target="_blank" rel="noopener noreferrer">Visit live site <span aria-hidden="true">&#8599;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project featured reveal">
+            <div class="project-visual alt-visual" aria-hidden="true">
+              <div class="rfid">
+                <div class="rfid-card"><span></span><b></b></div>
+                <div class="rfid-wave"><i></i><i></i><i></i></div>
+                <div class="rfid-screen">
+                  <p><em></em> ID verified</p>
+                  <p><em class="warn"></em> Violation logged</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="badge done">Completed &middot; Sep 2025 &ndash; Jun 2026</p>
+              <h3>GateWatch: Student ID Verification &amp; Violation Monitoring</h3>
+              <p class="muted-line">Academic project &middot; Philippine Christian University</p>
+              <p>
+                A web-based system that uses high-frequency RFID to verify student IDs and monitor
+                violations of university policies, giving campus staff a single place to track compliance.
+              </p>
+              <ul class="bullets compact">
+                <li>High-frequency RFID student ID verification</li>
+                <li>Violation recording and monitoring for policy non-compliance</li>
+                <li>Web-based interface for campus staff</li>
+              </ul>
+              <ul class="tags"><li>Web App</li><li>RFID</li><li>Monitoring System</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <aside class="team-banner reveal">
+          <div>
+            <p class="kicker">Current team</p>
+            <h3>Legson Media: Creative Studio</h3>
+            <p>
+              Marketing, websites, custom software, and photo &amp; video, under the tagline
+              &ldquo;Marketing that brings you customers.&rdquo; Projects like Elite Builders IX are
+              delivered through this team.
+            </p>
+          </div>
+          <a class="btn btn-ghost" href="https://www.legsonmedia.com/" target="_blank" rel="noopener noreferrer">Visit Legson Media <span aria-hidden="true">&#8599;</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- AI WORKFLOW -->
+    <section class="section dark-band" id="ai">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">AI-Powered Engineering</p>
+          <h2>AI is part of my core development process</h2>
+          <p class="section-sub">
+            I have a strong command of using AI as a tool, and I integrate it across the entire
+            development lifecycle to work faster and ship more reliable results.
+          </p>
+        </header>
+
+        <div class="ai-grid">
+          <article class="ai-card reveal"><span class="ai-num">01</span><h3>Debug efficiently</h3><p>Isolate root causes quickly by feeding AI the right context: error traces, expected behavior and recent changes.</p></article>
+          <article class="ai-card reveal"><span class="ai-num">02</span><h3>Refactor with confidence</h3><p>Clean up structure, remove duplication and improve readability while keeping behavior intact.</p></article>
+          <article class="ai-card reveal"><span class="ai-num">03</span><h3>Generate tests</h3><p>Draft unit and edge-case tests to catch regressions early and back changes with evidence.</p></article>
+          <article class="ai-card reveal"><span class="ai-num">04</span><h3>Document as I build</h3><p>Produce clear READMEs, inline comments and setup guides so projects stay easy to hand over.</p></article>
+          <article class="ai-card reveal"><span class="ai-num">05</span><h3>Plan system architecture</h3><p>Weigh options for structure, data flow and components before writing code, then stress-test the plan.</p></article>
+          <article class="ai-card reveal"><span class="ai-num">06</span><h3>Optimize performance &amp; workflows</h3><p>Find bottlenecks in code and in day-to-day process, then streamline both.</p></article>
+        </div>
+
+        <div class="ai-tools reveal">
+          <span>Tools I work with:</span>
+          <ul class="tags light"><li>ChatGPT</li><li>Claude</li><li>Windsurf</li><li>Prompt Engineering</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Skills</p>
+          <h2>What I bring to a team</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Web Development</h3>
+            <ul class="tags"><li>Full-stack websites</li><li>Blog / content systems</li><li>Responsive design</li><li>Programming concepts</li><li>Rapid learning of new tech</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>AI-Assisted Development</h3>
+            <ul class="tags"><li>Prompt engineering</li><li>ChatGPT</li><li>Claude</li><li>Windsurf</li><li>Debugging &amp; refactoring</li><li>Test &amp; doc generation</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>SEO &amp; Digital</h3>
+            <ul class="tags"><li>Search engine optimization</li><li>Local search</li><li>Content structure</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>IT Infrastructure &amp; Support</h3>
+            <ul class="tags"><li>Hardware troubleshooting</li><li>Software troubleshooting</li><li>System configuration</li><li>Secure data wiping</li><li>Remote desktop support</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Networking</h3>
+            <ul class="tags"><li>Network setup</li><li>Configuration</li><li>Connectivity troubleshooting</li><li>Server &amp; network racks</li><li>Cable management</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Soft Skills</h3>
+            <ul class="tags"><li>Attention to detail</li><li>Organization</li><li>Communication</li><li>Adaptability</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Education</p>
+          <h2>Academic background</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu-main reveal">
+            <div class="card-top">
+              <div>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="org">Philippine Christian University, Manila</p>
+              </div>
+              <p class="when">2022 &ndash; 2026</p>
+            </div>
+            <div class="honors">
+              <span class="honor gold">Magna Cum Laude</span>
+              <span class="honor">GWA 1.46</span>
+              <span class="honor">Consistent Dean's Lister</span>
+            </div>
+            <p>
+              Capstone-level work includes <strong>GateWatch</strong>, an RFID-based student ID verification
+              and violation monitoring system.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <div>
+                <h3>Senior High School, TVL-ICT Strand</h3>
+                <p class="org">University of Perpetual Help System, Laguna</p>
+              </div>
+              <p class="when">Graduated 2022</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let's work together</h2>
+          <p class="section-sub">
+            Looking for an IT specialist, web developer or someone who can bridge both?
+            I'd love to hear from you.
+          </p>
+          <div class="cta-row center">
+            <a class="btn btn-primary" href="mailto:mrk.ramos118@gmail.com">Email me</a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" download>Download resume</a>
+          </div>
+          <p class="contact-line">mrk.ramos118@gmail.com &middot; San Pedro, Laguna, Philippines</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Mark Jason B. Ramos. All rights reserved.</p>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
