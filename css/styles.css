@@ -211,23 +211,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ---------- Projects ---------- */
 .project-grid { display: grid; gap: 1.5rem; }
 .project {
-  display: grid; background: var(--surface); border: 1px solid var(--line);
+  display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line);
   border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);
 }
 .project-visual {
-  display: grid; place-items: center; padding: clamp(1.25rem, 4vw, 2rem);
+  display: grid; place-items: center; padding: clamp(1.25rem, 4vw, 2rem); min-height: 220px;
   background: linear-gradient(135deg, var(--accent-soft), color-mix(in srgb, var(--accent-2) 14%, transparent));
 }
-.project-body { padding: clamp(1.25rem, 3.5vw, 2rem); }
+.project-body { padding: clamp(1.25rem, 3.5vw, 2rem); display: flex; flex-direction: column; flex: 1; }
 .project-body h3 { font-size: clamp(1.25rem, 3vw, 1.6rem); }
 .muted-line { color: var(--muted); font-size: .9rem; }
 .badge {
-  display: inline-block; margin-bottom: .8rem; padding: .25rem .7rem; border-radius: 999px;
+  display: inline-block; align-self: flex-start; margin-bottom: .8rem; padding: .25rem .7rem; border-radius: 999px;
   font-size: .78rem; font-weight: 600; background: rgba(34, 197, 94, .14); color: #15803d;
 }
 [data-theme="dark"] .badge { color: #4ade80; }
 .badge.done { background: var(--accent-soft); color: var(--accent); }
-.project-links { margin-top: 1.25rem; }
+.project-links { margin-top: auto; padding-top: 1.25rem; }
 
 /* browser mock */
 .mock { width: min(100%, 360px); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
@@ -256,14 +256,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .rfid-screen em { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; }
 .rfid-screen em.warn { background: #f59e0b; }
 
-.team-banner {
-  margin-top: 1.5rem; padding: clamp(1.25rem, 3.5vw, 2rem); border-radius: 20px;
-  background: var(--surface); border: 1px dashed var(--accent);
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem;
-}
-.team-banner > div { flex: 1 1 340px; }
-.team-banner h3 { font-size: 1.35rem; }
-.team-banner p:last-child { margin-bottom: 0; color: var(--muted); }
 
 /* ---------- AI band ---------- */
 .dark-band { background: linear-gradient(160deg, #0b1130, #151c4d 55%, #0f3a4a); color: #e9edf9; position: relative; overflow: hidden; }
@@ -349,9 +341,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .hero-grid { grid-template-columns: 1.25fr 1fr; gap: 3.5rem; }
   .about-grid { grid-template-columns: 1.2fr 1fr; gap: 3rem; }
   .ai-grid, .skills-grid { grid-template-columns: repeat(3, 1fr); }
-  .project { grid-template-columns: 1fr 1.25fr; }
-  .project:nth-child(even) { grid-template-columns: 1.25fr 1fr; }
-  .project:nth-child(even) .project-visual { order: 2; }
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-card { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -380,3 +370,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .js .reveal { opacity: 1; transform: none; }
   .dark-band { background: #fff; color: #000; }
 }
+
+/* project mocks: editor + agency */
+.mock-hero.dark { background: linear-gradient(120deg, #0b1130, var(--accent)); }
+.mock-chips { display: flex; gap: .4rem; }
+.mock-chips span { flex: 1; height: 18px; border-radius: 999px; background: var(--accent-soft); border: 1px solid var(--line); }
+.mock-body.editor { grid-template-columns: 1fr 1fr; gap: .6rem; min-height: 132px; }
+.editor .code { background: #0b1130; border-radius: 8px; padding: .6rem; display: grid; align-content: start; gap: 7px; }
+.editor .code span { display: block; height: 6px; border-radius: 3px; background: #7dd3fc; opacity: .75; }
+.editor .code span:nth-child(even) { background: #a5b4fc; margin-left: 12px; }
+.editor .preview { border: 1px solid var(--line); border-radius: 8px; padding: .6rem; display: grid; align-content: start; gap: 7px; }
+.editor .preview b { display: block; height: 22px; border-radius: 5px; background: linear-gradient(120deg, var(--accent), var(--accent-2)); }
+.editor .preview i { display: block; height: 6px; border-radius: 3px; background: var(--line); }
