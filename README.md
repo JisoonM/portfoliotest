@@ -50,7 +50,7 @@ All asset paths are relative, so the site also works under a repo sub-path such 
 ## Customize
 
 - **Content:** edit the sections in `index.html`.
-- **Colors:** change the tokens at the top of `css/styles.css` (`--accent`, `--accent-2`).
+- **Colors:** change the tokens at the top of `css/styles.css` (`--accent` for light and dark themes).
 - **Resume:** replace `assets/resume.pdf` and keep the file name.
 - **Contact:** search for `mrk.ramos118@gmail.com` and update if needed.
 - **Add a photo:** place `assets/profile.jpg` and add an `<img>` in the hero section.
