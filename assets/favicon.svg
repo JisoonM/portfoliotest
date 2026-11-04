@@ -1,5 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#111214"/>
-  <text x="32" y="41" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-weight="600" font-size="24" fill="#ffffff">MR</text>
-  <circle cx="51" cy="13" r="5" fill="#2f5bff"/>
+  <rect width="64" height="64" fill="#14161a"/>
+  <g stroke-width="5">
+    <path d="M9 8v48" stroke="#f7f7f4"/><path d="M9 8v48" stroke="#e8701a" stroke-dasharray="7 5"/>
+    <path d="M15 8v48" stroke="#e8701a"/>
+    <path d="M21 8v48" stroke="#f7f7f4"/><path d="M21 8v48" stroke="#2aa35c" stroke-dasharray="7 5"/>
+    <path d="M27 8v48" stroke="#2f73e0"/>
+    <path d="M33 8v48" stroke="#f7f7f4"/><path d="M33 8v48" stroke="#2f73e0" stroke-dasharray="7 5"/>
+    <path d="M39 8v48" stroke="#2aa35c"/>
+    <path d="M45 8v48" stroke="#f7f7f4"/><path d="M45 8v48" stroke="#9a6238" stroke-dasharray="7 5"/>
+    <path d="M51 8v48" stroke="#9a6238"/>
+  </g>
 </svg>

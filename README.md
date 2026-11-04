@@ -50,7 +50,8 @@ All asset paths are relative, so the site also works under a repo sub-path such 
 ## Customize
 
 - **Content:** edit the sections in `index.html`.
-- **Colors:** change the tokens at the top of `css/styles.css` (`--accent` for light and dark themes).
+- **Colors:** the wire colors are the `--w-*` tokens at the top of `css/styles.css`. They follow the T568B standard, so the same colors are also set in `js/main.js` (the wiremap demo) and `assets/favicon.svg`.
+- **Project screenshots:** live in `assets/work/`.
 - **Resume:** replace `assets/resume.pdf` and keep the file name.
 - **Contact:** search for `mrk.ramos118@gmail.com` and update if needed.
 - **Add a photo:** place `assets/profile.jpg` and add an `<img>` in the hero section.
